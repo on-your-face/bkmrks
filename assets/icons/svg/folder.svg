@@ -1,0 +1,45 @@
+<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.000000" height="50.000000" fill="none" customFrame="#000000">
+	<defs>
+		<linearGradient id="paint_linear_0" x1="-8.71521759" x2="41.7250061" y1="9.78666496" y2="36.703331" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(250,192,23)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(225,171,45)" offset="0.908999979" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="paint_linear_1" x1="5.27283001" x2="19.1315231" y1="9.7266655" y2="29.8777752" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(251,254,243)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(226,228,227)" offset="0.908999979" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="paint_linear_2" x1="1.08695984" x2="22.8260899" y1="20.5555534" y2="20.5555534" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(251,254,243)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(226,228,227)" offset="0.908999979" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="paint_linear_3" x1="17.2445641" x2="47.788044" y1="43.0966606" y2="43.6577759" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(227,169,23)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(215,156,30)" offset="0.463999987" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="paint_linear_4" x1="-6.39021778" x2="38.0086937" y1="13.6266632" y2="33.6422195" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(255,239,178)" offset="0.340000004" stop-opacity="1" />
+			<stop stop-color="rgb(255,237,173)" offset="0.485000014" stop-opacity="1" />
+			<stop stop-color="rgb(255,233,159)" offset="0.65200001" stop-opacity="1" />
+			<stop stop-color="rgb(254,226,137)" offset="0.828000009" stop-opacity="1" />
+			<stop stop-color="rgb(254,216,107)" offset="1" stop-opacity="1" />
+		</linearGradient>
+		<radialGradient id="paint_radial_0" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-58.5598,0,0,-59.8611,40.0391,54.2411)">
+			<stop stop-color="rgb(254,200,50)" offset="0.199000001" stop-opacity="1" />
+			<stop stop-color="rgb(252,214,103)" offset="0.601000011" stop-opacity="1" />
+			<stop stop-color="rgb(253,218,117)" offset="0.680000007" stop-opacity="1" />
+			<stop stop-color="rgb(254,228,150)" offset="0.885999978" stop-opacity="1" />
+			<stop stop-color="rgb(255,232,162)" offset="1" stop-opacity="1" />
+		</radialGradient>
+	</defs>
+	<g id="folder">
+		<rect id="Прямоугольник 1" width="50.000000" height="50.000000" x="0.000000" y="0.000000" opacity="0" fill="rgb(196,196,196)" />
+		<g id="Сочетание 1">
+			<path id="Форма 1" d="M47.2826 45L2.71739 45C1.2163 45 0 43.7567 0 42.2222L0 7.77778C0 6.24333 1.2163 5 2.71739 5L15.3228 5C16.9739 5 18.5348 5.76667 19.5663 7.08556L22.2826 10.5556L47.2826 10.5556C48.7837 10.5556 50 11.7989 50 13.3333L50 42.2222C50 43.7567 48.7837 45 47.2826 45Z" fill="url(#paint_linear_0)" fill-rule="nonzero" />
+			<path id="Форма 2" d="M1.08696 27.2222L22.8261 27.2222L22.8261 11.6667L3.26087 11.6667C2.05979 11.6667 1.08696 12.6611 1.08696 13.8889L1.08696 27.2222Z" fill="url(#paint_linear_1)" fill-rule="nonzero" />
+			<path id="Форма 3" d="M1.08696 28.3333L22.8261 28.3333L22.8261 12.7778L3.26087 12.7778C2.05979 12.7778 1.08696 13.7722 1.08696 15L1.08696 28.3333Z" fill="url(#paint_linear_2)" fill-rule="nonzero" />
+			<path id="Форма 4" d="M0 41.5278L0 42.2222C0 43.7567 1.2163 45 2.71739 45L47.2826 45C48.7837 45 50 43.7567 50 42.2222L50 41.5278L0 41.5278Z" fill="url(#paint_linear_3)" fill-rule="nonzero" />
+			<path id="Форма 5" d="M47.2826 11.6667L22.2826 11.6667L20.938 12.5822C19.6891 13.4344 18.2207 13.8889 16.7185 13.8889L2.71739 13.8889C1.2163 13.8889 0 15.1322 0 16.6667L0 41.1111C0 42.6455 1.2163 43.8889 2.71739 43.8889L47.2826 43.8889C48.7837 43.8889 50 42.6455 50 41.1111L50 14.4444C50 12.91 48.7837 11.6667 47.2826 11.6667Z" fill="url(#paint_linear_4)" fill-rule="nonzero" />
+			<path id="Форма 6" d="M47.2826 43.8889L2.71739 43.8889C1.2163 43.8889 0 42.6456 0 41.1111L0 17.7778C0 16.2433 1.2163 15 2.71739 15L17.1261 15C18.6283 15 20.0967 14.5456 21.3467 13.6933L22.6902 12.7778L47.2826 12.7778C48.7837 12.7778 50 14.0211 50 15.5556L50 41.1111C50 42.6456 48.7837 43.8889 47.2826 43.8889Z" fill="url(#paint_radial_0)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>
