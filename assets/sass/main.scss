@@ -4,7 +4,7 @@
    align-items: center;
    justify-content: center;
    gap: 7px;
-   height: 100dvh;
+   min-height: 100dvh;
    padding: 7px;
 }
 
@@ -22,12 +22,12 @@
    border-radius: 7px;
    cursor: pointer;
    display: flex;
-   height: 60px;
    justify-content: center;
    opacity: 1;
    padding: 7px;
    transition: 0.5s;
-   width: 60px;
+   // width: 100%;
+   max-width: 60px;
 
    &:hover {
       opacity: 0.5;
