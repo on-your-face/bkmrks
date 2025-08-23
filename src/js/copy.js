@@ -31,7 +31,7 @@ export function initCopy() {
                new_branch: 'создать новую ветку — git checkout -b имя_ветки',
                branch_global: 'git config --global push.autoSetupRemote true',
                clear_spooler: 'del /Q /F "%systemroot%\\System32\\spool\\PRINTERS\\*.*"',
-               'cmd-cd': 'cd /d "C:\\on-your-face\\"',
+               'cmd-cd': 'cd ""',
                'cmd-start': 'start "" "c:\\OSPanel\\Open Server Panel.exe"',
                'cmd-OSP-server-START': 'start "" "c:\\OSPanel\\Open Server Panel.exe" /start',
                'cmd-OSP-server-RESTART': 'start "" "c:\\OSPanel\\Open Server Panel.exe" /restart',
