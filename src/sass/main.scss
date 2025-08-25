@@ -69,4 +69,12 @@
    height: 2px;
    margin: 2px 0;
    width: 100%;
+
+   &.first {
+      margin-top: 7px;
+   }
+
+   &.last {
+      margin-bottom: 7px;
+   }
 }
