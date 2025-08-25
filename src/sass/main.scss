@@ -5,7 +5,7 @@
    justify-content: center;
    gap: 7px;
    min-height: 100dvh;
-   padding: 7px;
+   // padding: 7px;
 }
 
 .box {
@@ -14,6 +14,15 @@
    flex-wrap: wrap;
    gap: 7px;
    justify-content: center;
+   padding: 0 7px;
+
+   &:first-child {
+      padding-top: 7px;
+   }
+
+   &:last-child {
+      padding-bottom: 7px;
+   }
 }
 
 .element {
@@ -52,4 +61,12 @@
          opacity: initial;
       }
    }
+}
+
+.divider {
+   background-color: rgb(255 255 255 / 27.4%);
+   box-shadow: 0 0 10px rgb(255 255 255);
+   height: 2px;
+   margin: 2px 0;
+   width: 100%;
 }
