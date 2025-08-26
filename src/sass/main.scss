@@ -78,3 +78,9 @@
       margin-bottom: 7px;
    }
 }
+
+.divider__main {
+   background-color: -webkit-linear-gradient(90deg, #0b6ed1d3, #0098bec9, #0faa559a); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(90deg, #0b6ed1c0, #0098beb7, #0faa55a9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   box-shadow: 0 0 10px rgb(0, 238, 255);
+}
