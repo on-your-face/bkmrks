@@ -11,22 +11,37 @@ export function initSearch() {
       block.dataset.origDisplay = style !== 'none' ? style : 'inline-block';
    });
 
+   // 🔹 общая функция для закрытия поиска + очистки
+   function closeSearch() {
+      inner.classList.remove('active');
+      input.value = '';
+
+      // сброс отображения блоков
+      document.querySelectorAll('.tag.copy').forEach((block) => {
+         block.style.display = block.dataset.origDisplay;
+      });
+   }
+
    // клик по иконке — разворачиваем / сворачиваем
    toggle.addEventListener('click', () => {
-      inner.classList.toggle('active');
-      if (inner.classList.contains('active')) input.focus();
+      if (inner.classList.contains('active')) {
+         closeSearch();
+      } else {
+         inner.classList.add('active');
+         input.focus();
+      }
    });
 
    // клик вне блока — сворачиваем
    document.addEventListener('click', (e) => {
       if (!inner.contains(e.target) && e.target !== toggle) {
-         inner.classList.remove('active');
+         closeSearch();
       }
    });
 
    // нажатие Esc — сворачиваем
    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') inner.classList.remove('active');
+      if (e.key === 'Escape') closeSearch();
    });
 
    // мобильный свайп для закрытия поиска
@@ -47,7 +62,7 @@ export function initSearch() {
       if (swipingInner && isSwiping) {
          currentX = event.touches[0].clientX;
          if (startX - currentX > 100) {
-            swipingInner.classList.remove('active');
+            closeSearch();
             isSwiping = false;
             delete swipingInner.dataset.isSwiping;
          }
@@ -62,7 +77,7 @@ export function initSearch() {
       }
    });
 
-   // 🔹 живой поиск по data-search-tg-password
+   // 🔹 живой поиск
    input.addEventListener('input', () => {
       const query = input.value.trim().toLowerCase();
       const blocks = document.querySelectorAll('.tag.copy');
