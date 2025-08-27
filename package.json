@@ -8,6 +8,7 @@
       "build": "vite build && npm run svgo:optimize",
       "preview": "vite preview",
       "predeploy": "npm run build",
+      "deploy-all": "git add . && git commit -m \"ok\" && git push && npm run build && npm run deploy",
       "deploy": "gh-pages -d dist",
       "test": "echo \"Error: no test specified\" && exit 1",
       "format": "prettier --write .",
