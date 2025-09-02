@@ -5,19 +5,6 @@ export function initCopy() {
          const key = this.getAttribute('data-href');
          if (key) {
             const data = {
-               npm_stylelint: 'npx stylelint "./assets/sass/**/*.{css,scss}" --fix',
-               npm_plug_stylelint: 'npm i -D stylelint stylelint-order stylelint-config-standard-scss',
-               npm_plug_html: 'npm install vite-plugin-html-inject --save-dev',
-               npx_prettier: 'npx prettier --write .',
-               npm_install: 'npm install',
-               npm_plug_svgo: 'npm install -D svgo',
-               npm_run_dev: 'npm run dev',
-               npm_run_preview: 'npm run preview',
-               npm_run_build: 'npm run build',
-               npm_run_deploy: 'npm run deploy',
-               nodejs_install_lastv_npm: 'npm install -g npm@latest',
-               nodejs_vite_indir: 'npm create vite@latest',
-               nodejs_npm_indir: 'npm init',
                msword2007_templates: '%appdata%\\Microsoft\\Шаблоны',
                php_myadmin: '127.0.0.1/openserver/phpmyadmin/',
                stop_spooler: 'net stop spooler',
