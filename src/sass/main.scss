@@ -15,15 +15,25 @@
    gap: 7px;
    justify-content: center;
    padding: 0 7px;
-
+   width: 100%;
+ 
    &:first-child {
-      padding-top: 7px;
+     padding-top: 7px;
    }
-
+ 
    &:last-child {
-      padding-bottom: 7px;
+     padding-bottom: 7px;
    }
-}
+ 
+   &.shadow {
+     filter: brightness(0.4); // затемнение блока
+     transition: filter 0.3s ease;
+ 
+     &:hover {
+       filter: brightness(1); // убираем затемнение при наведении
+     }
+   }
+ }
 
 .element {
    align-items: center;
