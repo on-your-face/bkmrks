@@ -87,9 +87,13 @@ export function initModal() {
 document.addEventListener('click', (e) => {
    const isNewTab = e.target.closest('.new_tab');
    if (!isNewTab) return;
+
    const modal = document.querySelector('.modal.open__main');
-   if (!modal) return;
-   modal.classList.remove('open__main');
+   const tags = document.querySelector('.open__tags');
+
+   if (modal) modal.classList.remove('open__main');
+   if (tags) tags.classList.remove('open__tags');
+
    resetBody();
    closeTags();
 });
