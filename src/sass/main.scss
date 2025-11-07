@@ -16,24 +16,24 @@
    justify-content: center;
    padding: 0 7px;
    width: 100%;
- 
+
    &:first-child {
-     padding-top: 7px;
+      padding-top: 7px;
    }
- 
+
    &:last-child {
-     padding-bottom: 7px;
+      padding-bottom: 7px;
    }
- 
+
    &.shadow {
-     filter: brightness(0.4); // затемнение блока
-     transition: filter 0.3s ease;
- 
-     &:hover {
-       filter: brightness(1); // убираем затемнение при наведении
-     }
+      filter: brightness(0.4); // затемнение блока
+      transition: filter 0.3s ease;
+
+      &:hover {
+         filter: brightness(1); // убираем затемнение при наведении
+      }
    }
- }
+}
 
 .element {
    align-items: center;
@@ -46,7 +46,7 @@
    padding: 7px;
    transition: 0.5s;
    // width: 100%;
-   max-width: 60px;
+   width: 70px;
 
    &:hover {
       opacity: 0.5;
