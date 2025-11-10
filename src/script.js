@@ -13,5 +13,6 @@ import { initModal } from './js/modal.js';
 import { initCopySmall } from './js/copy_small.js';
 import { initCopy } from './js/copy.js';
 import { initSearch } from './js/search_tg_accounts.js';
+import { initYandexTime } from './js/yandex_time.js';
 // initScript
-(initModal(), initNewTab(), initCopy(), initCopySmall(), preloadFonts(), initSearch());
+(initModal(), initNewTab(), initCopy(), initCopySmall(), preloadFonts(), initSearch(), initYandexTime());
