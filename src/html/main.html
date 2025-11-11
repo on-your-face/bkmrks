@@ -17,7 +17,37 @@
       </a>
       <a class="element new_tab" href="https://rutracker.org/"><img src="./src/assets/icons/svg/rutracker.svg" /></a>
       <a class="element new_tab" href="https://rutor.info/"><img class="border" src="./src/assets/icons/svg/rutor.svg" /></a>
-      <a class="element new_tab" href="https://yandex.ru/time"><img src="./src/assets/icons/svg/yandex_time.svg" /></a>
+      <a class="element new_tab" href="https://yandex.ru/time">
+         <div style="width: 200px">
+            <svg id="yandexTimeClock" tz="Europe/Moscow" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+               <!-- ЦИФЕРБЛАТ -->
+               <circle cx="25" cy="25" r="23.5" fill="white" stroke="#e6e6e6" stroke-width="1" />
+
+               <!-- ======== ЧАСОВАЯ (тонкая) ======== -->
+               <g id="hourHand" transform="translate(25 25)">
+                  <rect x="-0.7" y="-11" width="1.4" height="11" fill="black" rx="0.7" />
+               </g>
+
+               <!-- ======== МИНУТНАЯ (тонкая) ======== -->
+               <g id="minuteHand" transform="translate(25 25)">
+                  <rect x="-0.7" y="-16" width="1.4" height="16" fill="black" rx="0.7" />
+               </g>
+
+               <!-- ======== СЕКУНДНАЯ (тонкая) ======== -->
+               <g id="secondHand" transform="translate(25 25)">
+                  <rect x="-0.7" y="-19" width="1.4" height="19" fill="#ff0000" rx="0.7" />
+               </g>
+
+               <!-- ======== ЦЕНТРАЛЬНЫЙ УЗЕЛ ======== -->
+
+               <!-- большой чёрный круг -->
+               <circle cx="25" cy="25" r="2.2" fill="black" />
+
+               <!-- маленький красный круг -->
+               <circle cx="25" cy="25" r="1.1" fill="#ff0000" />
+            </svg>
+         </div>
+      </a>
    </div>
    <div class="divider divider__main"></div>
    <div class="box">
