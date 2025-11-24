@@ -63,8 +63,73 @@
    }
 
    &.folder {
-      background: linear-gradient(90deg, #354e69, #000);
-      // background: none;
+      position: relative;
+      overflow: hidden;
+      border-radius: 7px;
+
+      background: linear-gradient(
+         90deg,
+         rgba(95, 110, 120, 0.35),
+         // левый мягкий акцент
+         rgba(85, 105, 115, 0.35),
+         // основной мягкий цвет
+         rgba(75, 95, 105, 0.35),
+         // основной цвет
+         rgba(95, 110, 120, 0.35) // правый мягкий акцент
+      );
+      background-size: 400% 100%;
+      animation: gradientShift 20s ease-in-out infinite;
+
+      // Блик
+      &::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: -150%;
+         width: 80%;
+         height: 100%;
+         background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+         transform: skewX(-20deg);
+         animation: shine 3s ease-in-out infinite;
+      }
+
+      // Бирюзовый акцент в левом нижнем углу
+      &::before {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 35%;
+         height: 35%;
+         background: radial-gradient(circle at bottom left, rgba(0, 191, 182, 0.25), transparent 70%);
+         pointer-events: none; // чтобы не мешало клику
+      }
+   }
+
+   // Анимация плавного движения градиента
+   @keyframes gradientShift {
+      0% {
+         background-position: 0% 0%;
+      }
+      50% {
+         background-position: 100% 0%;
+      }
+      100% {
+         background-position: 0% 0%;
+      }
+   }
+
+   // Анимация блика
+   @keyframes shine {
+      0% {
+         left: -150%;
+      }
+      50% {
+         left: 150%;
+      }
+      100% {
+         left: 150%;
+      }
    }
 
    @media (max-width: 1000px) {
