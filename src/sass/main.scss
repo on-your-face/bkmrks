@@ -133,10 +133,13 @@
       }
    }
 
-   @media (max-width: 1000px) {
+   @media (max-width: 1200px) {
       &:hover {
          opacity: initial;
       }
+
+      width: 70px;
+      height: 70px;
    }
 }
 
