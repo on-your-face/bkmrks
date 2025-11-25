@@ -88,12 +88,23 @@ document.addEventListener('click', (e) => {
    const isNewTab = e.target.closest('.new_tab');
    if (!isNewTab) return;
 
+   // ЛОКАЛЬНЫЕ версии функций, доступные здесь
+   const resetBodyLocal = () => {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+   };
+
+   const closeTagsLocal = () => {
+      document.querySelectorAll('.tags.content__wrapper').forEach((el) => el.classList.remove('open__tags'));
+      document.querySelectorAll('a.anchor[href^="#"]').forEach((el) => (el.style.opacity = ''));
+   };
+
    const modal = document.querySelector('.modal.open__main');
    const tags = document.querySelector('.open__tags');
 
    if (modal) modal.classList.remove('open__main');
    if (tags) tags.classList.remove('open__tags');
 
-   resetBody();
-   closeTags();
+   resetBodyLocal();
+   closeTagsLocal();
 });
