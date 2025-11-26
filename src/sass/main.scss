@@ -81,9 +81,35 @@
       background-size: 400% 100%;
       animation: gradientShift 20s ease-in-out infinite;
 
-      // Блик
-      &::after {
-         content: '';
+      .folder {
+         position: relative;
+         overflow: hidden;
+         border-radius: 7px;
+         background: linear-gradient(90deg, rgba(95, 110, 120, 0.35), rgba(85, 105, 115, 0.35), rgba(75, 95, 105, 0.35), rgba(95, 110, 120, 0.35));
+         background-size: 400% 100%;
+         animation: gradientShift 20s ease-in-out infinite;
+      }
+
+      .corner {
+         position: absolute;
+         width: 35%;
+         height: 35%;
+         pointer-events: none;
+      }
+
+      .corner.bottom-left {
+         bottom: 0;
+         left: 0;
+         background: radial-gradient(circle at bottom left, rgba(0, 191, 182, 0.25), transparent 70%);
+      }
+
+      .corner.bottom-right {
+         bottom: 0;
+         right: 0;
+         background: radial-gradient(circle at bottom right, rgba(0, 191, 182, 0.25), transparent 70%);
+      }
+
+      .shine {
          position: absolute;
          top: 0;
          left: -150%;
@@ -92,18 +118,7 @@
          background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
          transform: skewX(-20deg);
          animation: shine 3s ease-in-out infinite;
-      }
-
-      // Бирюзовый акцент в левом нижнем углу
-      &::before {
-         content: '';
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         width: 35%;
-         height: 35%;
-         background: radial-gradient(circle at bottom left, rgba(0, 191, 182, 0.25), transparent 70%);
-         pointer-events: none; // чтобы не мешало клику
+         pointer-events: none;
       }
    }
 
