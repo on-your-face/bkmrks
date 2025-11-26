@@ -14,5 +14,7 @@ import { initCopySmall } from './js/copy_small.js';
 import { initCopy } from './js/copy.js';
 import { initSearch } from './js/search_tg_accounts.js';
 import { initYandexTime } from './js/yandex_time.js';
+import { preloadModals } from './js/preload_modals.js';
+
 // initScript
-(initModal(), initNewTab(), initCopy(), initCopySmall(), preloadFonts(), initSearch(), initYandexTime());
+(initModal(), initNewTab(), initCopy(), initCopySmall(), preloadFonts(), initSearch(), initYandexTime(), preloadModals()); // <-- добавляем предзагрузку модалок
