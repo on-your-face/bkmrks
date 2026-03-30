@@ -8,7 +8,6 @@ import './sass/tags.scss';
 import './sass/search.scss';
 // scripts
 import { preloadFonts } from './js/preload_font.js';
-import { initNewTab } from './js/new_tab.js';
 import { initModal } from './js/modal.js';
 import { initCopySmall } from './js/copy_small.js';
 import { initCopy } from './js/copy.js';
@@ -17,4 +16,4 @@ import { initYandexTime } from './js/yandex_time.js';
 import { preloadModals } from './js/preload_modals.js';
 
 // initScript
-(initModal(), initNewTab(), initCopy(), initCopySmall(), preloadFonts(), initSearch(), initYandexTime(), preloadModals()); // <-- добавляем предзагрузку модалок
+(initModal(), initCopy(), initCopySmall(), preloadFonts(), initSearch(), initYandexTime(), preloadModals()); // <-- добавляем предзагрузку модалок
